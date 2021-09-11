@@ -1,0 +1,84 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  background: #000000;
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stack {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  align-content: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.digit {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 70vh;
+  grid-row: 1;
+  grid-column: 1;
+  opacity: .1;
+}
+
+.stack .digit:nth-child(0) {
+  animation: cycle 3.3s 0s infinite;
+}
+
+.stack .digit:nth-child(1) {
+  animation: cycle 4s 0.4s infinite;
+}
+
+.stack .digit:nth-child(2) {
+  animation: cycle 4s 0.8s infinite;
+}
+
+.stack .digit:nth-child(3) {
+  animation: cycle 4s 1.2s infinite;
+}
+
+.stack .digit:nth-child(4) {
+  animation: cycle 4s 1.6s infinite;
+}
+
+.stack .digit:nth-child(5) {
+  animation: cycle 4s 2s infinite;
+}
+
+.stack .digit:nth-child(6) {
+  animation: cycle 4s 2.4s infinite;
+}
+
+.stack .digit:nth-child(7) {
+  animation: cycle 4s 2.8s infinite;
+}
+
+.stack .digit:nth-child(8) {
+  animation: cycle 4s 3.2s infinite;
+}
+
+.stack .digit:nth-child(9) {
+  animation: cycle 4s 3.6s infinite;
+}
+
+.stack .digit:nth-child(10) {
+  animation: cycle 4s 4s infinite;
+}
+
+@keyframes cycle {
+  0%, 25% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0.1;
+  }
+}
