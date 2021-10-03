@@ -1,4 +1,4 @@
-# JavaScript Exercises
+# Numerical Digit Stack Animation
 
 ## Table of contents
 * [General info](#general-info)
